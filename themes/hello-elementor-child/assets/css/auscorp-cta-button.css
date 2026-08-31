@@ -1,0 +1,114 @@
+/**
+ * Auscorp CTA Button widget styles.
+ */
+
+.auscorp-cta-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 16px 28px;
+	border-radius: 100px;
+	border: 2px solid transparent;
+	background: #ff7a21;
+	color: #ffffff !important;
+	font-family: 'Figtree', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+	white-space: nowrap;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.auscorp-cta-btn:focus-visible {
+	outline: 2px solid #ffffff;
+	outline-offset: 2px;
+}
+
+/* Outline type — transparent fill, border from controls */
+.auscorp-cta-btn-type-outline .auscorp-cta-btn {
+	background-color: transparent !important;
+	background-image: none !important;
+}
+
+/* Simple type — text link style */
+.auscorp-cta-btn-type-simple .auscorp-cta-btn {
+	background: none !important;
+	background-color: transparent !important;
+	background-image: none !important;
+	border: none !important;
+	box-shadow: none !important;
+	border-radius: 0;
+}
+
+.auscorp-cta-btn-type-simple .auscorp-cta-btn:hover,
+.auscorp-cta-btn-type-simple .auscorp-cta-btn:focus {
+	box-shadow: none !important;
+	transform: none !important;
+}
+
+.auscorp-cta-btn__text {
+	display: inline-block;
+}
+
+.auscorp-cta-btn__icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	font-size: 14px;
+	line-height: 1;
+}
+
+.auscorp-cta-btn__icon svg {
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+.auscorp-cta-btn__icon--before {
+	order: -1;
+}
+
+.auscorp-cta-btn__icon--after {
+	order: 1;
+}
+
+.auscorp-cta-btn--full {
+	width: 100%;
+}
+
+.auscorp-cta-btn--icon-only {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.auscorp-cta-btn__wrapper {
+	display: flex;
+}
+
+.auscorp-cta-btn__wrapper--align-left {
+	justify-content: flex-start;
+}
+
+.auscorp-cta-btn__wrapper--align-center {
+	justify-content: center;
+}
+
+.auscorp-cta-btn__wrapper--align-right {
+	justify-content: flex-end;
+}
+
+.auscorp-cta-btn__wrapper--align-stretch .auscorp-cta-btn {
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+	.auscorp-cta-btn--mobile-full {
+		width: 100%;
+	}
+}

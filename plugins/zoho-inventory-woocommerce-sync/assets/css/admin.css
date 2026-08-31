@@ -1,0 +1,128 @@
+/* ==========================================================================
+   Zoho Inventory WooCommerce Sync — Admin Stylesheet
+   ========================================================================== */
+
+/* Wrap */
+.zoho-inventory-sync-wrap {
+	max-width: 900px;
+}
+
+/* Card component */
+.zoho-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px 24px;
+	margin-top: 20px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+}
+
+.zoho-card h2 {
+	margin-top: 0;
+	padding-top: 0;
+	font-size: 1.1em;
+	border-bottom: 1px solid #ececec;
+	padding-bottom: 10px;
+	margin-bottom: 16px;
+}
+
+/* Connection status badges */
+.zoho-status {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 12px;
+}
+
+.zoho-connected  { color: #2e7d32; }
+.zoho-disconnected { color: #c62828; }
+
+.zoho-connected  .dashicons { color: #2e7d32; }
+.zoho-disconnected .dashicons { color: #c62828; }
+
+/* Sync table */
+.zoho-sync-table {
+	margin-top: 12px;
+}
+
+.zoho-sync-table td,
+.zoho-sync-table th {
+	vertical-align: middle;
+}
+
+.zoho-sync-status {
+	min-width: 140px;
+	font-style: italic;
+	color: #666;
+}
+
+.zoho-sync-status.is-success { color: #2e7d32; font-style: normal; font-weight: 600; }
+.zoho-sync-status.is-error   { color: #c62828; font-style: normal; }
+.zoho-sync-status.is-loading { color: #1565c0; }
+
+/* Queue stats pills */
+#zoho-queue-stats {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.zoho-stat-pill {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px 20px;
+	border-radius: 4px;
+	background: #f6f7f7;
+	border: 1px solid #c3c4c7;
+	min-width: 90px;
+}
+
+.zoho-stat-pill .stat-count {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.zoho-stat-pill .stat-label {
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #666;
+	margin-top: 4px;
+}
+
+.zoho-stat-pill.pending    { border-color: #ffa726; }
+.zoho-stat-pill.completed  { border-color: #66bb6a; }
+.zoho-stat-pill.failed     { border-color: #ef5350; }
+.zoho-stat-pill.processing { border-color: #42a5f5; }
+
+/* Log filters */
+.zoho-log-filters select {
+	min-width: 140px;
+}
+
+/* Copy button feedback */
+.zoho-copy-btn.copied {
+	background-color: #2e7d32 !important;
+	color: #fff !important;
+	border-color: #2e7d32 !important;
+}
+
+/* Spinner inline */
+.zoho-spinner {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #c3c4c7;
+	border-top-color: #1d2327;
+	border-radius: 50%;
+	animation: zoho-spin 0.6s linear infinite;
+	vertical-align: middle;
+	margin-right: 4px;
+}
+
+@keyframes zoho-spin {
+	to { transform: rotate(360deg); }
+}

@@ -1,0 +1,5 @@
+[2026-06-15 04:37:14] [INFO] Import session started.
+[2026-06-15 04:37:20] [SUCCESS] Row 2: Created item 5860785000001435002.
+[2026-06-15 04:37:23] [SUCCESS] Row 3: Created item 5860785000001435023.
+[2026-06-15 04:37:26] [SUCCESS] Row 4: Created item 5860785000001433001.
+[2026-06-15 04:37:26] [INFO] Import finished. Processed: 3, Created: 3, Updated: 0, Failed: 0.

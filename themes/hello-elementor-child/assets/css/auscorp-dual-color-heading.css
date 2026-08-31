@@ -1,0 +1,48 @@
+/**
+ * Auscorp Dual Color Heading widget styles.
+ */
+
+.auscorp-dual-heading {
+	margin: 0;
+	padding: 0;
+	font-family: 'Figtree', sans-serif;
+	font-size: clamp(32px, 4vw, 48px);
+	font-weight: 800;
+	line-height: 1.15;
+	letter-spacing: -0.02em;
+	color: #1a1a1a;
+}
+
+.auscorp-dual-heading__wrapper {
+	display: block;
+	text-align: center;
+}
+
+.auscorp-dual-heading__link {
+	display: inline-block;
+	color: inherit;
+	text-decoration: none;
+}
+
+.auscorp-dual-heading__link:hover,
+.auscorp-dual-heading__link:focus {
+	color: inherit;
+	text-decoration: none;
+}
+
+.auscorp-dual-heading__part {
+	display: inline;
+}
+
+.auscorp-dual-heading__part--primary {
+	color: #1a1a1a;
+}
+
+.auscorp-dual-heading__part--accent {
+	color: #ff7a21;
+}
+
+.auscorp-dual-heading__space {
+	display: inline;
+	white-space: pre;
+}

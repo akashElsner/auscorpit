@@ -1,0 +1,330 @@
+/**
+ * Auscorp Products Grid widget styles.
+ */
+
+.auscorp-products-grid {
+	width: 100%;
+}
+
+.auscorp-products-grid__inner {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px;
+}
+
+.auscorp-products-grid__empty {
+	margin: 0;
+	padding: 24px;
+	text-align: center;
+	color: #666666;
+	font-family: 'Figtree', sans-serif;
+}
+
+/* ── Card ── */
+.auscorp-product-card {
+	display: flex;
+	flex-direction: column;
+	background: #ffffff;
+	border-radius: 12px;
+	border: 1px solid #f0f0f0;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+	overflow: hidden;
+	transition: box-shadow 0.28s ease, transform 0.28s ease;
+	height: 100%;
+	padding: 20px;
+}
+
+.auscorp-product-card:hover {
+	box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+	transform: translateY(-4px);
+}
+
+/* ── Image ── */
+.auscorp-product-card__image-wrap {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 20px 12px;
+    background: #ffffff;
+    overflow: hidden;
+    position: relative;
+	margin-bottom: 16px;
+    /* isolation: isolate; */
+}
+
+.auscorp-product-card__image-link {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+}
+
+.auscorp-product-card__image {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+	transform: scale(1);
+	transform-origin: center center;
+	transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	will-change: transform;
+	backface-visibility: hidden;
+}
+
+.auscorp-product-card:hover .auscorp-product-card__image {
+	transform: scale(1.12);
+}
+
+.auscorp-products-grid--no-image-zoom .auscorp-product-card:hover .auscorp-product-card__image {
+	transform: none;
+}
+
+/* ── Body ── */
+.auscorp-product-card__body {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 0 20px 20px;
+	gap: 8px;
+}
+
+.auscorp-product-card__title {
+	margin: 0;
+	font-family: 'Figtree', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 19.25px !important;
+}
+
+.auscorp-product-card__title a {
+	color: #1a1a1a;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 19.25px;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.auscorp-product-card__subtitle {
+	margin: 0;
+	font-family: 'Figtree', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.45;
+	color: #888888;
+}
+
+.auscorp-product-card__meta {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	margin-top: 4px;
+}
+
+.auscorp-product-card__rating {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	flex-wrap: wrap;
+}
+
+.auscorp-product-card__rating .star-rating {
+	margin: 0;
+	font-size: 13px;
+}
+
+.auscorp-product-card__rating-count {
+	font-family: 'Figtree', sans-serif;
+	font-size: 12px;
+	color: #888888;
+	line-height: 1;
+}
+
+.auscorp-product-card__sku {
+    font-family: 'Figtree', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #aaaaaa;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+}
+
+.auscorp-product-card__price {
+	font-family: 'Figtree', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	color: #ff7a21;
+	margin-top: 2px;
+}
+
+.auscorp-product-card__price del {
+	color: #aaaaaa;
+	font-weight: 400;
+	margin-right: 6px;
+}
+
+.auscorp-product-card__price ins {
+	text-decoration: none;
+}
+
+/* ── Footer / CTA ── */
+.auscorp-product-card__footer {
+	margin-top: auto;
+	padding-top: 12px;
+}
+
+.auscorp-product-card__footer .auscorp-product-card__btn{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: 100%;
+	padding: 12px 16px;
+	border: none;
+	border-radius: 8px;
+	background: #ff7a21;
+	color: #ffffff !important;
+	font-family: 'Figtree', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+	transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.auscorp-product-card__btn:hover,
+.auscorp-product-card__btn:focus {
+	background: #e86a15;
+	color: #ffffff !important;
+}
+
+.auscorp-product-card__btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 14px;
+    line-height: 1;
+    height: 18px;
+    width: 18px;
+}
+
+.auscorp-product-card__btn-icon svg {
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+/* Quote plugin compatibility — style plugin output inside footer */
+.auscorp-product-card__footer .addquotelistlink {
+	width: 100%;
+}
+
+.auscorp-product-card__footer .addquotelistlink .button,
+.auscorp-product-card__footer .addquotelistlink button {
+	display: inline-flex !important;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: 100% !important;
+	padding: 12px 16px !important;
+	border: none !important;
+	border-radius: 8px !important;
+	background: #ff7a21 !important;
+	color: #ffffff !important;
+	font-family: 'Figtree', sans-serif !important;
+	font-size: 13px !important;
+	font-weight: 700 !important;
+	line-height: 1 !important;
+	text-decoration: none !important;
+	cursor: pointer;
+	transition: background 0.2s ease, color 0.2s ease;
+}
+
+.auscorp-product-card__footer .addquotelistlink .button:hover,
+.auscorp-product-card__footer .addquotelistlink button:hover {
+	background: #e86a15 !important;
+	color: #ffffff !important;
+}
+
+.auscorp-product-card__footer .quotelistaddedbrowse,
+.auscorp-product-card__footer .quotelistexistsbrowse,
+.auscorp-product-card__footer .quotelistaddedbrowse_prodpage,
+.auscorp-product-card__footer .quotelistexistsbrowse_prodpage {
+	font-size: 12px;
+	text-align: center;
+}
+
+.auscorp-product-card__footer .quotelistaddedbrowse a,
+.auscorp-product-card__footer .quotelistexistsbrowse a {
+	color: #ff7a21;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.woocommerce .auscorp-product-card__footer a.added_to_cart{
+	background-color:#FF7A21;
+	color:white;
+	font-size:14px;
+	font-weight:600;
+	width:100%;
+	margin-top:5px;
+	padding:10px;
+	border-radius:5px;
+	text-align:center
+}
+
+@media (max-width: 1024px) {
+	.auscorp-products-grid__inner {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 767px) {
+	.auscorp-products-grid__inner {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* ── Shop archive grid (woocommerce/content-product.php) ── */
+.shop-content ul.products {
+	display: grid !important;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px;
+	margin: 0 0 32px;
+	padding: 0;
+	list-style: none;
+}
+
+.shop-content ul.products li.product {
+	width: auto;
+	margin: 0;
+	float: none;
+	list-style: none;
+}
+
+/* Filter plugins (e.g. HUSKY) sometimes inject loading/placeholder elements
+   directly inside ul.products — hide anything that isn't a real product card
+   so it doesn't consume a grid cell. */
+.shop-content ul.products > *:not(.product) {
+	display: none !important;
+}
+
+@media (max-width: 1024px) {
+	.shop-content ul.products {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 767px) {
+	.shop-content ul.products {
+		grid-template-columns: 1fr;
+	}
+}

@@ -1,0 +1,406 @@
+/**
+ * Front-end styling for the quote cart page, header badge, and inline
+ * add-to-quote feedback. Mirrors the theme's existing "account card" and
+ * ".auscorp-contact-form" patterns (style.css) so this page reads as part
+ * of the same design system rather than a bolted-on plugin screen.
+ */
+
+.auscorp-rfq-page {
+	--auscorp-rfq-primary: var(--account-primary, #ff7a21);
+	--auscorp-rfq-primary-hover: var(--account-primary-hover, #e86a15);
+	--auscorp-rfq-dark: var(--account-dark, #1f2937);
+	--auscorp-rfq-border: var(--account-border, #e5e7eb);
+	--auscorp-rfq-text: var(--account-text, #4b5563);
+	--auscorp-rfq-light: var(--account-light, #f8f9fa);
+	--auscorp-rfq-error: var(--account-error, #dc2626);
+	--auscorp-rfq-shadow: var(--account-shadow-md, 0 8px 35px rgba(31, 41, 55, 0.07));
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 160px 24px 60px;
+	font-family: 'Figtree', sans-serif;
+}
+
+.auscorp-rfq-header {
+	margin-bottom: 28px;
+}
+
+.auscorp-rfq-page-title {
+	margin: 0 0 8px;
+	font-family: 'Figtree', sans-serif;
+	font-size: 30px;
+	font-weight: 800;
+	color: var(--auscorp-rfq-dark);
+}
+
+.auscorp-rfq-page-subtitle {
+	margin: 0;
+	font-size: 15px;
+	color: var(--auscorp-rfq-text);
+}
+
+/* Shared "card" surface — matches .woocommerce-EditAccountForm / product cards elsewhere */
+.auscorp-rfq-card {
+	background: #ffffff;
+	border: 1px solid var(--auscorp-rfq-border);
+	border-radius: 16px;
+	box-shadow: var(--auscorp-rfq-shadow);
+	margin-bottom: 28px;
+}
+
+.auscorp-rfq-card--empty {
+	padding: 48px 24px;
+	text-align: center;
+}
+
+.auscorp-rfq-empty {
+	font-size: 16px;
+	color: var(--auscorp-rfq-text);
+	margin: 0 0 20px;
+}
+
+.auscorp-rfq-table-wrap {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.auscorp-rfq-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.auscorp-rfq-table th,
+.auscorp-rfq-table td {
+	padding: 16px 18px;
+	border-bottom: 1px solid var(--auscorp-rfq-border);
+	text-align: left;
+	vertical-align: middle;
+}
+
+.auscorp-rfq-table thead th {
+	background: var(--auscorp-rfq-light);
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+	font-weight: 700;
+	color: var(--auscorp-rfq-text);
+	white-space: nowrap;
+}
+
+.auscorp-rfq-table tbody tr {
+	transition: background-color .15s ease;
+}
+
+.auscorp-rfq-table tbody tr:hover {
+	background: var(--auscorp-rfq-light);
+}
+
+.auscorp-rfq-table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+.auscorp-rfq-table tfoot th {
+	background: var(--auscorp-rfq-light);
+	border-bottom: none;
+	font-size: 15px;
+}
+
+.auscorp-rfq-row__product {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+}
+
+.auscorp-rfq-row__thumb {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	border-radius: 10px;
+	background: var(--auscorp-rfq-light);
+	overflow: hidden;
+	flex-shrink: 0;
+}
+
+.auscorp-rfq-row__thumb img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	padding: 6px;
+}
+
+.auscorp-rfq-row__name {
+	font-weight: 600;
+	color: var(--auscorp-rfq-dark);
+	font-size: 14px;
+}
+
+.auscorp-rfq-row__name small {
+	font-weight: 400;
+	color: var(--auscorp-rfq-text);
+}
+
+.auscorp-rfq-row__price,
+.auscorp-rfq-row__subtotal {
+	font-size: 14px;
+	color: var(--auscorp-rfq-text);
+	white-space: nowrap;
+}
+
+.auscorp-rfq-row__subtotal {
+	font-weight: 700;
+	color: var(--auscorp-rfq-dark);
+}
+
+.auscorp-rfq-qty-input {
+	width: 72px;
+	height: 44px;
+	padding: 0 8px;
+	border: 1px solid var(--auscorp-rfq-border);
+	border-radius: 8px;
+	background: var(--auscorp-rfq-light);
+	text-align: center;
+	font-family: inherit;
+	font-size: 14px;
+	color: var(--auscorp-rfq-dark);
+	outline: none;
+	transition: background-color .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.auscorp-rfq-qty-input:hover {
+	background: #ffffff;
+	border-color: #d1d5db;
+}
+
+.auscorp-rfq-qty-input:focus {
+	background: #ffffff;
+	border-color: var(--auscorp-rfq-primary);
+	box-shadow: 0 0 0 3px rgba(255, 122, 33, .12);
+}
+
+.auscorp-rfq-remove {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	border: none;
+	border-radius: 50%;
+	background: transparent;
+	color: var(--auscorp-rfq-text);
+	font-size: 18px;
+	line-height: 1;
+	cursor: pointer;
+	transition: background-color .15s ease, color .15s ease;
+}
+
+.auscorp-rfq-remove:hover,
+.auscorp-rfq-remove:focus {
+	background: rgba(220, 38, 38, .1);
+	color: var(--auscorp-rfq-error);
+}
+
+.auscorp-rfq-total {
+	font-size: 18px;
+	font-weight: 800;
+	color: var(--auscorp-rfq-primary);
+}
+
+/* Request form — same accent-bar treatment as .woocommerce-EditAccountForm */
+.auscorp-rfq-form {
+	position: relative;
+	overflow: hidden;
+	padding: 32px;
+}
+
+.auscorp-rfq-form::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: linear-gradient(90deg, var(--auscorp-rfq-primary), #ffb280);
+}
+
+.auscorp-rfq-form h3 {
+	margin: 0 0 20px;
+	font-family: 'Figtree', sans-serif;
+	font-size: 20px;
+	font-weight: 800;
+	color: var(--auscorp-rfq-dark);
+}
+
+.auscorp-rfq-field {
+	margin-bottom: 18px;
+}
+
+.auscorp-rfq-field label {
+	display: block;
+	margin-bottom: 8px;
+	color: var(--auscorp-rfq-dark);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.auscorp-rfq-field .required {
+	color: var(--auscorp-rfq-error);
+}
+
+.auscorp-rfq-field input,
+.auscorp-rfq-field textarea {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 18px;
+	font-family: inherit;
+	font-size: 15px;
+	color: var(--auscorp-rfq-dark);
+	background-color: var(--auscorp-rfq-light);
+	border: 1px solid var(--auscorp-rfq-border);
+	border-radius: 8px;
+	outline: none;
+	transition: background-color .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.auscorp-rfq-field input {
+	height: 52px;
+}
+
+.auscorp-rfq-field textarea {
+	min-height: 140px;
+	padding: 15px 18px;
+	resize: vertical;
+}
+
+.auscorp-rfq-field input:hover,
+.auscorp-rfq-field textarea:hover {
+	background-color: #ffffff;
+	border-color: #d1d5db;
+}
+
+.auscorp-rfq-field input:focus,
+.auscorp-rfq-field textarea:focus {
+	background-color: #ffffff;
+	border-color: var(--auscorp-rfq-primary);
+	box-shadow: 0 0 0 3px rgba(255, 122, 33, .12);
+}
+
+.auscorp-rfq-response {
+	min-height: 20px;
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+
+.auscorp-rfq-response--error {
+	color: var(--auscorp-rfq-error);
+}
+
+.auscorp-rfq-success {
+	display: block;
+	font-size: 16px;
+	color: var(--account-success, #16a34a);
+}
+
+.auscorp-rfq-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 14px 28px;
+	border: none;
+	border-radius: 8px;
+	background: var(--auscorp-rfq-primary);
+	color: #fff;
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 14px;
+	cursor: pointer;
+	text-decoration: none;
+	transition: background-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.auscorp-rfq-btn:hover,
+.auscorp-rfq-btn:focus {
+	background: var(--auscorp-rfq-primary-hover);
+	color: #fff;
+	box-shadow: 0 6px 20px rgba(255, 122, 33, .35);
+	transform: translateY(-1px);
+}
+
+.auscorp-rfq-btn:disabled {
+	opacity: .6;
+	cursor: not-allowed;
+	transform: none;
+	box-shadow: none;
+}
+
+.auscorp-rfq-btn--error {
+	background: var(--auscorp-rfq-error);
+}
+
+.auscorp-rfq-btn--secondary {
+	background: transparent;
+	border: 1px solid var(--auscorp-rfq-primary);
+	color: var(--auscorp-rfq-primary);
+}
+
+.auscorp-rfq-btn--secondary:hover,
+.auscorp-rfq-btn--secondary:focus {
+	background: var(--auscorp-rfq-primary);
+	color: #fff;
+}
+
+.auscorp-rfq-form-notice {
+	margin-top: 10px;
+	font-size: 13px;
+	color: var(--account-success, #16a34a);
+}
+
+.auscorp-rfq-form-notice--error {
+	color: var(--auscorp-rfq-error, #dc2626);
+}
+
+@media (max-width: 640px) {
+	.auscorp-rfq-page {
+		padding: 70px 16px 40px;
+	}
+
+	.auscorp-rfq-page-title {
+		font-size: 24px;
+	}
+
+	.auscorp-rfq-form {
+		padding: 24px;
+	}
+}
+
+/* Header "quote list" link */
+.auscorp-quote-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	color: #1f2937;
+	font-weight: 600;
+	font-size: 13px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.auscorp-quote-link:hover {
+	color: var(--account-primary, #ff7a21);
+}
+
+.auscorp-rfq-badge {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 18px;
+	height: 18px;
+	padding: 0 5px;
+	margin-left: 6px;
+	border-radius: 999px;
+	background: var(--account-primary, #ff7a21);
+	color: #fff;
+	font-size: 11px;
+	font-weight: 700;
+	line-height: 18px;
+}

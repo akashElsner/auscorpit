@@ -1,0 +1,259 @@
+# Copyright (C) 2018 znpb-posts-layouts
+# This file is distributed under the same license as the znpb-posts-layouts package.
+msgid ""
+msgstr ""
+"Project-Id-Version: znpb-posts-layouts\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: HogashStudio\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:16
+msgid "Blog-Posts Layouts Element"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:36
+msgid "Blog Category"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:37
+msgid "Select the blog category to show items"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:46
+msgid "Blog Tags"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:47
+msgid "Select the blog tags to show items"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:64
+msgid "Select Style"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:65
+msgid "Select the style of this element"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:70
+msgid "Default"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:71
+msgid "Masonry (since Kallyas v4.12.0)"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:72
+msgid "Large Carousel (since Kallyas v4.12.0)"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:77
+msgid "Posts to load"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:78
+msgid "Please select how many posts to load (except main featured item)."
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:93
+msgid "Masonry - Columns"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:94
+msgid "Select how many columns you want to display the items."
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:99
+msgid "1 Column"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:100
+msgid "2 Columns"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:101
+msgid "3 Columns"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:107
+msgid "Masonry - Gutter Size"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:108
+msgid "Select the gutter distance between columns."
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:113
+msgid "Default (15px)"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:114
+msgid "Extra Small (5px)"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:115
+msgid "Small (10px)"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:116
+msgid "Medium (25px)"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:117
+msgid "Large (40px)"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:124
+msgid "Masonry - Content Alignment"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:125
+msgid "Select the content alignment."
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:130
+msgid "Left"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:131
+msgid "Center"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:132
+msgid "Right"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:145, elements/blog-posts-layouts/blog-posts-layouts.php:377
+msgid "LARGE"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:146, elements/blog-posts-layouts/blog-posts-layouts.php:378
+msgid "MEDIUM"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:147, elements/blog-posts-layouts/blog-posts-layouts.php:379
+msgid "SMALL"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:148, elements/blog-posts-layouts/blog-posts-layouts.php:380
+msgid "EXTRA SMALL"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:155
+msgid "Title Typography settings"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:156, elements/blog-posts-layouts/blog-posts-layouts.php:182, elements/blog-posts-layouts/blog-posts-layouts.php:195, elements/blog-posts-layouts/blog-posts-layouts.php:208, elements/blog-posts-layouts/blog-posts-layouts.php:231, elements/blog-posts-layouts/blog-posts-layouts.php:267
+msgid "Specify the typography properties for the title."
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:181, elements/blog-posts-layouts/blog-posts-layouts.php:194, elements/blog-posts-layouts/blog-posts-layouts.php:207
+msgid "Title settings"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:220
+msgid "Title Hover Color"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:221
+msgid "Select the title's hover color."
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:230
+msgid "Post Info - Typography settings"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:252
+msgid "Show Excerpt"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:253
+msgid "Choose if you want to display the excerpt."
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:258, elements/blog-posts-layouts/blog-posts-layouts.php:296, elements/blog-posts-layouts/blog-posts-layouts.php:328, elements/blog-posts-layouts/blog-posts-layouts.php:359
+msgid "Yes"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:259, elements/blog-posts-layouts/blog-posts-layouts.php:297, elements/blog-posts-layouts/blog-posts-layouts.php:329, elements/blog-posts-layouts/blog-posts-layouts.php:360
+msgid "No"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:266
+msgid "Post Excerpt - Typography settings"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:290
+msgid "AutoPlay Carousel?"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:291
+msgid "Autoplay the carousel?"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:303
+msgid "Autoplay Speed"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:304
+msgid "Choose the autoplay speed seconds interval."
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:322
+msgid "Display Arrows?"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:323
+msgid "Display Arrows navigation?."
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:335
+msgid "Arrows Offset"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:336
+msgid "Choose an offset for the arrows."
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:353
+msgid "Display Dots?"
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:354
+msgid "Display Dots navigation?."
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:370
+msgid "Edit element padding & margins for each device breakpoint. "
+msgstr ""
+
+#: elements/blog-posts-layouts/blog-posts-layouts.php:371
+msgid "This will enable you to have more control over the padding of the container on each device. Click to see <a href='http://hogash.d.pr/1f0nW' target='_blank'>how box-model works</a>."
+msgstr ""
+
+#: elements/blog-posts-layouts/layouts/default/index.php:86
+msgid " BY "
+msgstr ""
+
+#: elements/blog-posts-layouts/layouts/default/index.php:145, elements/blog-posts-layouts/layouts/large_carousel/index.php:82, elements/blog-posts-layouts/layouts/masonry/index.php:65, elements/blog-posts-layouts/layouts/masonry/index.php:134
+msgid " by "
+msgstr ""
+
+#: elements/blog-posts-layouts/layouts/large_carousel/index.php:85, elements/blog-posts-layouts/layouts/masonry/index.php:68, elements/blog-posts-layouts/layouts/masonry/index.php:137
+msgid " in "
+msgstr ""
+
+#: znpb-posts-layouts.php:87
+msgid "Get Kallyas theme from here"
+msgstr ""
+
+#: znpb-posts-layouts.php:88
+msgid "Kallyas theme is not installed! ZNPB Blog-Posts Layouts Element only works with Kallyas theme."
+msgstr ""

@@ -1,0 +1,214 @@
+/**
+ * Ingram Sync admin styles.
+ */
+
+.ingram-sync-wrap {
+	max-width: 1200px;
+}
+
+.ingram-sync-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	gap: 16px;
+	margin: 20px 0 30px;
+}
+
+.ingram-sync-cards-inline {
+	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+}
+
+.ingram-sync-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 16px 20px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.ingram-sync-card h3 {
+	margin: 0 0 8px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #646970;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.ingram-sync-stat {
+	font-size: 28px;
+	font-weight: 600;
+	margin: 0;
+	line-height: 1.2;
+	color: #1d2327;
+}
+
+.ingram-sync-stat.ingram-sync-success { color: #00a32a; }
+.ingram-sync-stat.ingram-sync-error { color: #d63638; }
+.ingram-sync-stat.ingram-sync-warning { color: #dba617; }
+
+.ingram-sync-meta {
+	margin: 4px 0 0;
+	font-size: 12px;
+	color: #646970;
+}
+
+.ingram-sync-section {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 16px 20px;
+	margin-bottom: 20px;
+}
+
+.ingram-sync-section h2 {
+	margin-top: 0;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #f0f0f1;
+}
+
+.ingram-sync-tabs {
+	margin-bottom: 20px;
+}
+
+.ingram-sync-settings-content {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	margin-top: -1px;
+}
+
+.ingram-log-level,
+.ingram-status {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.ingram-log-success,
+.ingram-status-completed { background: #d4edda; color: #155724; }
+.ingram-log-error,
+.ingram-status-failed { background: #f8d7da; color: #721c24; }
+.ingram-log-warning,
+.ingram-status-processing { background: #fff3cd; color: #856404; }
+.ingram-log-info,
+.ingram-status-pending { background: #d1ecf1; color: #0c5460; }
+
+.ingram-sync-tools {
+	display: grid;
+	gap: 24px;
+	margin-bottom: 30px;
+}
+
+.ingram-sync-tool-group {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 16px 20px;
+}
+
+.ingram-sync-tool-group h2 {
+	margin: 0 0 12px;
+	font-size: 14px;
+}
+
+.ingram-sync-tool-group .button {
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
+.ingram-tools-result,
+.ingram-ajax-result {
+	margin-top: 12px;
+	padding: 10px 14px;
+	border-radius: 4px;
+	display: none;
+}
+
+.ingram-tools-result.visible,
+.ingram-ajax-result.visible {
+	display: block;
+}
+
+.ingram-tools-result.success,
+.ingram-ajax-result.success {
+	background: #d4edda;
+	border: 1px solid #c3e6cb;
+	color: #155724;
+}
+
+.ingram-tools-result.error,
+.ingram-ajax-result.error {
+	background: #f8d7da;
+	border: 1px solid #f5c6cb;
+	color: #721c24;
+}
+
+.ingram-tools-result.loading,
+.ingram-ajax-result.loading {
+	background: #e7f3ff;
+	border: 1px solid #b8daff;
+	color: #004085;
+}
+
+.ingram-progress-message {
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.ingram-progress-stats {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px 20px;
+	margin-bottom: 10px;
+	font-size: 13px;
+}
+
+.ingram-progress-stats strong {
+	font-size: 15px;
+}
+
+.ingram-progress-bar {
+	height: 12px;
+	background: rgba(0, 0, 0, 0.08);
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.ingram-progress-bar-fill {
+	display: block;
+	height: 100%;
+	background: #2271b1;
+	border-radius: 6px;
+	transition: width 0.3s ease;
+}
+
+.ingram-tools-result.success .ingram-progress-bar-fill {
+	background: #00a32a;
+}
+
+.ingram-tools-result.error .ingram-progress-bar-fill {
+	background: #d63638;
+}
+
+.ingram-queue-filters a.current {
+	font-weight: 600;
+}
+
+.ingram-api-test-table .ingram-ajax-result {
+	display: inline-block;
+	margin-left: 12px;
+	padding: 4px 10px;
+}
+
+.ingram-system-info table th {
+	width: 200px;
+	text-align: left;
+	padding: 8px 12px;
+}
+
+.ingram-system-info table td {
+	padding: 8px 12px;
+}

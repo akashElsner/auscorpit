@@ -1,0 +1,143 @@
+/**
+ * Auscorp Page Banner widget styles.
+ */
+
+.auscorp-page-banner {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 280px;
+	padding: 60px 24px;
+	overflow: hidden;
+	background-color: #1a1a1a;
+	box-sizing: border-box;
+}
+
+.auscorp-page-banner__bg {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.auscorp-page-banner__bg--empty {
+	background-color: #1a1a1a;
+}
+
+.auscorp-page-banner__overlay {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	background-color: #000000;
+	opacity: 0.55;
+	pointer-events: none;
+}
+
+.auscorp-page-banner__inner {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.auscorp-page-banner__title {
+	margin: 0 0 14px;
+	color: #ffffff;
+	font-family: 'Figtree', sans-serif;
+	font-size: clamp(28px, 4vw, 48px);
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+}
+
+.auscorp-page-banner__nav {
+	width: 100%;
+}
+
+.auscorp-page-banner__breadcrumbs {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: 'Figtree', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 1.4;
+}
+
+.auscorp-page-banner__crumb,
+.auscorp-page-banner__separator {
+	margin: 0;
+	padding: 0;
+}
+
+.auscorp-page-banner__crumb-link {
+	color: #ff7a21;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.auscorp-page-banner__crumb-link:hover,
+.auscorp-page-banner__crumb-link:focus {
+	color: #ffffff;
+}
+
+.auscorp-page-banner__crumb-link:focus-visible {
+	outline: 2px solid #ff7a21;
+	outline-offset: 2px;
+}
+
+.auscorp-page-banner__crumb-current,
+.auscorp-page-banner__crumb-text {
+	color: #ffffff;
+}
+
+.auscorp-page-banner__separator {
+	color: #ffffff;
+	user-select: none;
+}
+
+@media (max-width: 1024px) {
+	.auscorp-page-banner {
+		min-height: 220px;
+		padding: 48px 20px;
+	}
+
+	.auscorp-page-banner__title {
+		font-size: clamp(24px, 3.5vw, 36px);
+	}
+
+	.auscorp-page-banner__breadcrumbs {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 767px) {
+	.auscorp-page-banner {
+		min-height: 180px;
+		padding: 40px 16px;
+	}
+
+	.auscorp-page-banner__title {
+		font-size: clamp(22px, 6vw, 28px);
+		margin-bottom: 10px;
+	}
+
+	.auscorp-page-banner__breadcrumbs {
+		font-size: 13px;
+		gap: 6px;
+	}
+}

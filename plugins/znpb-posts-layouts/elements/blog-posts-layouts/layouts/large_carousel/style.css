@@ -1,0 +1,34 @@
+.znBpl--large_carousel {position: relative;}
+@media (min-width:992px){
+	.znBpl-crsWrapper {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row;}
+	.znBpl-crsCol {-webkit-box-flex: 1;-webkit-flex: 1; -ms-flex: 1; flex: 1; width: 50%; min-height: 100px;}
+}
+.znBpl-crsCol {min-width: 1px;}
+.znBpl-crsCol.znBpl-crsCol--left {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;}
+.znBpl-leftInner {width: 80%; -webkit-align-self: center; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; margin: auto; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; text-align: center;}
+
+/* Title */
+.znBpl--large_carousel .znBpl-bPost-title {font-size: 34px; line-height: 1.4; margin-top: 0; margin-bottom: 30px;}
+.znBpl--large_carousel .znBpl-bPost-titleLink {display: inline-block;}
+/* Post Info */
+.znBpl--large_carousel .znBpl-bPost-info { font-size: 10px; margin-bottom: 35px; letter-spacing: 1px;}
+.znBpl--large_carousel .znBpl-bPost-info a:hover { opacity: .8;}
+.znBpl--large_carousel .znBpl-bPost-infoDate { text-transform: uppercase; }
+.znBpl--large_carousel .znBpl-bPost-infoAuthor { text-transform: uppercase;}
+.znBpl--large_carousel .znBpl-bPost-infoCats { text-transform: uppercase; display: inline-block; }
+/* Post Image */
+.znBpl-bPost-imgLink {-webkit-transition: opacity .3s ease-out;transition:opacity .3s ease-out;}
+.znBpl-bPost-imgLink:hover {opacity:.8;}
+/* Excerpt */
+.znBpl--large_carousel .znBpl-bPost-excerpt { font-size: 15px; line-height: 1.5; margin-bottom: 30px; }
+
+/* Arrows */
+.znBpl-carouselNav .znSlickNav-arr {position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 70px; height: 70px; line-height: 70px; border-radius: 50%; text-align: center; border:1px solid #ddd; }
+.znBpl-carouselNav .znSlickNav-arr:hover {border-color: #ccc;}
+.znBpl-carouselNav .znSlickNav-arr svg { display: inline-block; line-height: 70px; width: 13px; height: 13px; }
+.znBpl-carouselNav .znSlickNav-arr.znSlickNav-prev {left:-100px;text-align: center;}
+.znBpl-carouselNav .znSlickNav-arr.znSlickNav-next {right:-100px;text-align: center;}
+.znBpl-carouselNav .znSlickNav-arr polyline {stroke-width:40px; }
+/* Dots */
+.znBpl-carouselDots li button{ background-color: black; opacity: .4; width: 8px; height: 8px;}
+.znBpl-carouselDots li.slick-active button{ background-color: black; opacity: .9; }

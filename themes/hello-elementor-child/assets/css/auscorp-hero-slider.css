@@ -1,0 +1,637 @@
+/* ══════════════════════════════════════════════════════
+   Auscorp Hero Slider Widget
+══════════════════════════════════════════════════════ */
+
+.auscorp-hero {
+	position: relative;
+	overflow: hidden;
+	background-color: #0a1628;
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	font-family: 'Figtree', sans-serif;
+}
+
+.auscorp-hero__wave {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	pointer-events: none;
+	background:
+		radial-gradient(ellipse 80% 60% at 70% 40%, rgba(30, 58, 110, 0.45) 0%, transparent 70%),
+		radial-gradient(ellipse 60% 50% at 20% 80%, rgba(20, 45, 90, 0.35) 0%, transparent 65%),
+		radial-gradient(ellipse 50% 40% at 90% 90%, rgba(25, 50, 95, 0.3) 0%, transparent 60%);
+}
+
+.auscorp-hero__video-wrap {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.auscorp-hero__video-bg {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	background-color: #001021;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	pointer-events: none;
+}
+
+.auscorp-hero__video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	min-width: 100%;
+	min-height: 100%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+	pointer-events: none;
+	mix-blend-mode: screen;
+	opacity: 0.85;
+}
+
+.auscorp-hero__video-mid {
+	position: absolute;
+	inset: 0;
+	z-index: 2;
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	pointer-events: none;
+	opacity: 0.45;
+	mix-blend-mode: multiply;
+}
+
+.auscorp-hero__video-front {
+	position: absolute;
+	inset: 0;
+	z-index: 3;
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	pointer-events: none;
+	opacity: 0.72;
+}
+
+.auscorp-hero__video-light {
+	position: absolute;
+	inset: 0;
+	z-index: 4;
+	pointer-events: none;
+	background:
+		radial-gradient(ellipse 75% 60% at 72% 38%, rgba(40, 85, 155, 0.55) 0%, transparent 68%),
+		radial-gradient(ellipse 55% 45% at 18% 82%, rgba(18, 42, 88, 0.4) 0%, transparent 62%),
+		radial-gradient(ellipse 45% 35% at 88% 92%, rgba(22, 48, 92, 0.32) 0%, transparent 58%),
+		linear-gradient(128deg, rgba(28, 62, 118, 0.22) 0%, transparent 38%, transparent 62%, rgba(8, 18, 40, 0.28) 100%);
+}
+
+.auscorp-hero__video-overlay {
+	position: absolute;
+	inset: 0;
+	z-index: 5;
+	background-color: #0a1628;
+	opacity: 0.55;
+	pointer-events: none;
+}
+
+.auscorp-hero--has-video {
+	background-image: none !important;
+}
+
+.auscorp-hero--video-mobile-off.auscorp-hero--has-video {
+	background-image: var(--auscorp-hero-fallback-image, none);
+	background-size: cover;
+	background-position: center;
+}
+
+@media (max-width: 767px) {
+	.auscorp-hero--video-mobile-off .auscorp-hero__video-wrap {
+		display: none;
+	}
+}
+
+.auscorp-hero__container {
+	position: relative;
+	z-index: 2;
+	max-width: 1664px !important;
+	margin: 0 auto;
+	padding: 140px 32px 60px;
+}
+
+.auscorp-hero__slider {
+	position: relative;
+}
+
+.auscorp-hero__slides {
+	position: relative;
+}
+
+.auscorp-hero__slide {
+	display: none;
+	opacity: 0;
+	transition: opacity 0.6s ease;
+}
+
+.auscorp-hero__slide.is-active {
+	display: block;
+	opacity: 1;
+}
+
+.auscorp-hero__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	gap: 48px;
+}
+
+/* ── Content ── */
+.auscorp-hero__badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 4px 15px;
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 100px;
+	backdrop-filter: blur(8px);
+}
+
+.auscorp-hero__badge-dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #F97316;
+	flex-shrink: 0;
+	box-shadow: 0 0 8px rgba(255, 122, 33, 0.6);
+}
+
+.auscorp-hero__badge-text {
+	font-size: 13px;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.9);
+	letter-spacing: 0.01em;
+}
+
+.auscorp-hero__title {
+	margin: 0;
+	font-size: clamp(36px, 5vw, 58px);
+	font-weight: 800;
+	line-height: 1.1;
+	letter-spacing: -0.02em;
+	color: #ffffff;
+}
+
+.auscorp-hero__highlight {
+	color: #F97316;
+}
+
+.auscorp-hero__description {
+	margin: 0;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 1.65;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.auscorp-hero__actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 14px;
+}
+
+.auscorp-hero__btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 16px 28px;
+	border-radius: 9px;
+	font-family: 'Figtree', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+	text-decoration: none;
+	transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+	white-space: nowrap;
+}
+
+.auscorp-hero__btn--primary {
+	background: #F97316;
+	color: #ffffff !important;
+	border: 2px solid #F97316;
+}
+
+.auscorp-hero__btn--primary:hover {
+	background: #e86a15;
+	border-color: #e86a15;
+	box-shadow: 0 8px 24px rgba(255, 122, 33, 0.35);
+	transform: translateY(-2px);
+	color: #ffffff;
+}
+
+.auscorp-hero__btn--secondary {
+	color: #ffffff !important;
+	background: #FFFFFF03;
+   border: 1px solid #FFFFFF;
+   backdrop-filter: blur(42.5px);
+}
+
+.auscorp-hero__btn--secondary:hover {
+	border-color: #ffffff;
+	background: rgba(255, 255, 255, 0.08);
+	transform: translateY(-2px);
+	color: #ffffff;
+}
+
+.auscorp-hero__btn-icon {
+	display: inline-flex;
+	align-items: center;
+	font-size: 14px;
+}
+
+.auscorp-hero__features {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px 28px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.auscorp-hero__feature {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.auscorp-hero__feature-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background: #FFFFFF33 !important;
+	color: #ffffff;
+	font-size: 10px;
+	flex-shrink: 0;
+	border: 0.5px solid;
+   border-image-source: linear-gradient(224.39deg, #FFFFFF -17.98%, rgba(255, 255, 255, 0) 76.97%);
+}
+
+.auscorp-hero__feature-text {
+	font-size: 14px;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+/* ── Visual ── */
+.auscorp-hero__visual {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.auscorp-hero__image {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.35));
+}
+
+.auscorp-hero__image-placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 320px;
+	width: 100%;
+	border: 2px dashed rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	color: rgba(255, 255, 255, 0.4);
+	font-size: 14px;
+}
+
+/* ── Navigation ── */
+.auscorp-hero__arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	padding: 0;
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	color: #ffffff;
+	cursor: pointer;
+	transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+	backdrop-filter: blur(6px);
+}
+
+.auscorp-hero__arrow--prev {
+	left: -12px;
+}
+
+.auscorp-hero__arrow--next {
+	right: -12px;
+}
+
+.auscorp-hero__arrow:hover {
+	background: rgba(255, 255, 255, 0.15);
+	border-color: #F97316;
+	color: #F97316;
+}
+
+.auscorp-hero__dots {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.auscorp-hero__dot {
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.3);
+	cursor: pointer;
+	transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.auscorp-hero__dot.is-active {
+	background: #F97316;
+	transform: scale(1.2);
+}
+
+/* ── Statistics ── */
+.auscorp-hero__stats {
+	margin-top: 0 !important;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0;
+	//border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.auscorp-hero__stat {
+	position: relative;
+	text-align: center;
+	padding: 0 24px;
+}
+
+.auscorp-hero__stat:not(:last-child)::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	width: 1px;
+	height: 48px;
+	background: #C5C5C5;
+}
+
+.auscorp-hero__stat-number {
+	font-size: clamp(28px, 3vw, 40px);
+	font-weight: 800;
+	line-height: 1.1;
+	color: #ffffff;
+	margin-bottom: 8px;
+	letter-spacing: -0.02em;
+}
+
+.auscorp-hero__stat-label {
+	font-size: 13px;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.7);
+	line-height: 1.4;
+}
+
+/* ── Ticker ── */
+.auscorp-hero__ticker {
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	background: #0d1f3c;
+	padding: 14px 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.auscorp-hero__ticker-track {
+	display: flex;
+	width: max-content;
+	animation: auscorp-ticker-scroll var(--auscorp-ticker-speed, 30s) linear infinite;
+}
+
+.auscorp-hero__ticker-group {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+.auscorp-hero__ticker-item {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    white-space: nowrap;
+    padding: 0 4px;
+    line-height: 22.4px;
+    font-family: 'Figtree';
+}
+
+.auscorp-hero__ticker-sep {
+	font-size: 30px;
+	color: rgba(255, 255, 255, 0.35);
+	padding: 0 20px;
+}
+
+@keyframes auscorp-ticker-scroll {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+/* Center content children when alignment is center */
+.auscorp-hero__content[style*="text-align: center"] .auscorp-hero__description,
+.auscorp-hero__content[style*="text-align: center"] .auscorp-hero__badge {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.auscorp-hero__content[style*="text-align: center"] .auscorp-hero__description {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.auscorp-hero__content[style*="text-align: right"] .auscorp-hero__description {
+	margin-left: auto;
+}
+
+/* ══════════════════════════════════════════════════════
+   Default responsive layout (tablet + mobile)
+   Elementor desktop values are overridden here so the
+   hero works correctly before per-breakpoint settings
+   are saved in the editor.
+══════════════════════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__container {
+		padding-top: 120px !important;
+		padding-right: 24px !important;
+		padding-bottom: 50px !important;
+		padding-left: 24px !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__grid {
+		grid-template-columns: 1fr !important;
+		gap: 32px !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__visual {
+		order: -1 !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__image {
+		max-width: 480px !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__description {
+		max-width: 100% !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__stats {
+		grid-template-columns: repeat(2, 1fr) !important;
+		gap: 24px 16px !important;
+		margin-top: 40px !important;
+		padding-top: 32px !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__stat {
+		padding: 0 12px !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__stat::after {
+		display: none !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__stat:nth-child(odd):not(:last-child)::after {
+		display: block !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__arrow--prev {
+		left: 0 !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__arrow--next {
+		right: 0 !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__container {
+		padding-top: 100px !important;
+		padding-right: 20px !important;
+		padding-bottom: 40px !important;
+		padding-left: 20px !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__grid {
+		gap: 24px !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__title {
+		font-size: 32px !important;
+		line-height: 1.15 !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__description {
+		font-size: 15px !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__actions {
+		flex-direction: column !important;
+		align-items: stretch !important;
+		gap: 12px !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__btn {
+		width: 100% !important;
+		justify-content: center !important;
+		white-space: normal !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__features {
+		flex-direction: column !important;
+		align-items: flex-start !important;
+		gap: 12px !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__image {
+		max-width: 100% !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__stats {
+		grid-template-columns: repeat(2, 1fr) !important;
+		gap: 20px 12px !important;
+		margin-top: 32px !important;
+		padding-top: 28px !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__stat-number {
+		font-size: 28px !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__stat-label {
+		font-size: 12px !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__arrow {
+		width: 36px !important;
+		height: 36px !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__video-wrap {
+		display: block !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__video {
+		width: 100% !important;
+		height: 100% !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__container {
+		padding-top: 92px !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__title {
+		font-size: 28px !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__badge-text {
+		font-size: 12px !important;
+	}
+
+	.elementor-widget-auscorp_hero_slider .auscorp-hero__stats {
+		grid-template-columns: 1fr 1fr !important;
+	}
+}

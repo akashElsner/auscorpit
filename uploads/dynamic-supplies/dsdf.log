@@ -1,0 +1,403 @@
+[2026-06-23 04:48:58] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 04:49:33] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 04:49:33] Sync manually triggered by admin user.
+[2026-06-23 04:49:53] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 04:49:53] =======================================================
+[2026-06-23 04:49:53] SYNC START: /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-06-23 04:49:53] =======================================================
+[2026-06-23 04:49:53] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 04:49:53] Zoho source: Zoho Inventory WooCommerce Sync | DC: zoho.com | Org: 873827738
+[2026-06-23 04:49:53] CSV columns (64): Dynamic Supplies SKU, Manufacturer OEM Code, Brand, Name, Reseller Price Ex GST, RRP (inc GST), Cat Tier 1, Cat Tier 2, Cat Tier 3, QLD, NSW, VIC, WA, SA, VIRTUAL, Length (Shipping), Width (Shipping), Height (Shipping), Cubic m3 (Shipping), Product Weight (g), Bulky Item, Dangerous Goods, Button Battery, UoM, Creation Date, EOL, Description, Features/Specifications (HTML), Alternative Product Title, UPC/EAN/GTIN, Main Image URL, Alt Image 1, Alt Image 2, Alt Image 3, Images Last Updated, Product Brochure 1, Product Brochure 2, MSDS, Range Guide, Printer Compatibility, Cartridge Yield, Cartridge Type, Product Category Description, Regionalisation Code, Specific Type 1, Specific Value 1, Specific Type 2, Specific Value 2, Specific Type 3, Specific Value 3, Specific Type 4, Specific Value 4, Specific Type 5, Specific Value 5, Specific Type 6, Specific Value 6, Specific Type 7, Specific Value 7, Specific Type 8, Specific Value 8, Specific Type 9, Specific Value 9, Specific Type 10, Specific Value 10
+[2026-06-23 04:49:53] Image column detected: "Main Image URL"
+[2026-06-23 04:49:53] PASS 1 done | CSV rows: 2 | Unchanged: 0 | To sync: 2
+[2026-06-23 04:49:53] Fetching Zoho SKU map (one-time bulk lookup)...
+[2026-06-23 04:49:53] Zoho: fetching all existing items for SKU map (WC Sync plugin)...
+[2026-06-23 04:50:03] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 04:50:16] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 04:50:17] Zoho SKU map ready: 2594 items.
+[2026-06-23 04:50:17] SKU map fetch used ~13 API call(s).
+[2026-06-23 04:50:18] WARNING: Could not resolve inventory account "Dynamic Supply" — items may fail if item_type requires it.
+[2026-06-23 04:50:18] Settings | Throttle: 800ms | Budget remaining: 3000/3000 | Already used today: 13
+[2026-06-23 04:50:18] -------------------------------------------------------
+[2026-06-23 04:50:18] PASS 2: sending to Zoho...
+[2026-06-23 04:50:18] -------------------------------------------------------
+[2026-06-23 04:50:18] Row 1 | 1/2 | UPDATE | SKU: B05B
+[2026-06-23 04:50:19]   ✔ UPDATED: B05B
+[2026-06-23 04:50:19]   → Uploading image image:B05B
+[2026-06-23 04:50:23]   ✔ IMAGE uploaded for item_id: 5860785000001435002
+[2026-06-23 04:50:24] Row 2 | 2/2 | UPDATE | SKU: B131B
+[2026-06-23 04:50:25]   ✔ UPDATED: B131B
+[2026-06-23 04:50:25]   → Uploading image image:B131B
+[2026-06-23 04:50:28]   ✔ IMAGE uploaded for item_id: 5860785000001435023
+[2026-06-23 04:50:28] =======================================================
+[2026-06-23 04:50:28] Sync done | CSV: 2 | Queued: 2 | API calls: 4 | Created: 0 | Updated: 2 | Skipped: 0 | Errors: 0 | In Zoho: 2/2 (100%)
+[2026-06-23 04:50:28] =======================================================
+[2026-06-23 04:50:31] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 04:53:03] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:09:08] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:09:18] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:09:18] Sync manually triggered by admin user.
+[2026-06-23 05:09:53] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:09:53] =======================================================
+[2026-06-23 05:09:53] SYNC START: /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-06-23 05:09:53] =======================================================
+[2026-06-23 05:09:53] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:09:53] Zoho source: Zoho Inventory WooCommerce Sync | DC: zoho.com | Org: 873827738
+[2026-06-23 05:09:53] CSV columns (64): Dynamic Supplies SKU, Manufacturer OEM Code, Brand, Name, Reseller Price Ex GST, RRP (inc GST), Cat Tier 1, Cat Tier 2, Cat Tier 3, QLD, NSW, VIC, WA, SA, VIRTUAL, Length (Shipping), Width (Shipping), Height (Shipping), Cubic m3 (Shipping), Product Weight (g), Bulky Item, Dangerous Goods, Button Battery, UoM, Creation Date, EOL, Description, Features/Specifications (HTML), Alternative Product Title, UPC/EAN/GTIN, Main Image URL, Alt Image 1, Alt Image 2, Alt Image 3, Images Last Updated, Product Brochure 1, Product Brochure 2, MSDS, Range Guide, Printer Compatibility, Cartridge Yield, Cartridge Type, Product Category Description, Regionalisation Code, Specific Type 1, Specific Value 1, Specific Type 2, Specific Value 2, Specific Type 3, Specific Value 3, Specific Type 4, Specific Value 4, Specific Type 5, Specific Value 5, Specific Type 6, Specific Value 6, Specific Type 7, Specific Value 7, Specific Type 8, Specific Value 8, Specific Type 9, Specific Value 9, Specific Type 10, Specific Value 10
+[2026-06-23 05:09:53] Image column detected: "Main Image URL"
+[2026-06-23 05:09:53] PASS 1 done | CSV rows: 2 | Unchanged: 0 | To sync: 2
+[2026-06-23 05:09:53] Using cached Zoho SKU map (2594 items).
+[2026-06-23 05:09:54] WARNING: Could not resolve inventory account "Dynamic Supply" — items may fail if item_type requires it.
+[2026-06-23 05:09:54] Settings | Throttle: 800ms | Budget remaining: 2983/3000 | Already used today: 17
+[2026-06-23 05:09:54] -------------------------------------------------------
+[2026-06-23 05:09:54] PASS 2: sending to Zoho...
+[2026-06-23 05:09:54] -------------------------------------------------------
+[2026-06-23 05:09:54] Row 1 | 1/2 | UPDATE | SKU: B05B
+[2026-06-23 05:09:56]   ✔ UPDATED: B05B
+[2026-06-23 05:09:56]   → Uploading image image:B05B
+[2026-06-23 05:09:59]   ✔ IMAGE uploaded for item_id: 5860785000001435002
+[2026-06-23 05:10:00] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:10:00] Row 2 | 2/2 | UPDATE | SKU: B131B
+[2026-06-23 05:10:01]   ✔ UPDATED: B131B
+[2026-06-23 05:10:01]   → Uploading image image:B131B
+[2026-06-23 05:10:05]   ✔ IMAGE uploaded for item_id: 5860785000001435023
+[2026-06-23 05:10:05] =======================================================
+[2026-06-23 05:10:05] Sync done | CSV: 2 | Queued: 2 | API calls: 4 | Created: 0 | Updated: 2 | Skipped: 0 | Errors: 0 | In Zoho: 2/2 (100%)
+[2026-06-23 05:10:05] =======================================================
+[2026-06-23 05:10:09] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:10:15] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:10:56] Zoho -> WooCommerce sync manually triggered by admin user.
+[2026-06-23 05:10:56] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:11:02] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:11:03] Zoho -> WooCommerce sync started.
+[2026-06-23 05:11:06] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:11:08] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:11:12] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:11:18] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:11:22] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:11:24] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:11:27] Zoho -> WooCommerce: fetched 2601 active Zoho item(s).
+[2026-06-23 05:11:33] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:16:20] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:16:32] Zoho -> WooCommerce stop requested by user.
+[2026-06-23 05:16:35] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:16:44] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:16:49] Zoho -> WooCommerce stop requested by user.
+[2026-06-23 05:16:55] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:17:00] Zoho -> WooCommerce stop requested by user.
+[2026-06-23 05:17:04] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:17:47] Zoho -> WooCommerce progress: 100/2601 | Synced: 100 | Created: 100 | Updated: 0 | Errors: 0
+[2026-06-23 05:21:15] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:21:17] Zoho -> WooCommerce stop requested by user.
+[2026-06-23 05:21:20] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:23:35] Zoho -> WooCommerce progress: 200/2601 | Synced: 200 | Created: 200 | Updated: 0 | Errors: 0
+[2026-06-23 05:26:11] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:26:14] Zoho -> WooCommerce stop requested by user.
+[2026-06-23 05:26:17] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:29:44] Zoho -> WooCommerce progress: 300/2601 | Synced: 300 | Created: 300 | Updated: 0 | Errors: 0
+[2026-06-23 05:31:06] Zoho -> WooCommerce stop requested by user.
+[2026-06-23 05:31:09] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-23 05:35:21] Zoho -> WooCommerce progress: 400/2601 | Synced: 400 | Created: 400 | Updated: 0 | Errors: 0
+[2026-06-23 05:42:57] Zoho -> WooCommerce progress: 500/2601 | Synced: 500 | Created: 500 | Updated: 0 | Errors: 0
+[2026-06-23 05:48:31] Zoho -> WooCommerce progress: 600/2601 | Synced: 600 | Created: 600 | Updated: 0 | Errors: 0
+[2026-06-23 05:53:48] Zoho -> WooCommerce progress: 700/2601 | Synced: 700 | Created: 700 | Updated: 0 | Errors: 0
+[2026-06-23 05:59:03] Zoho -> WooCommerce progress: 800/2601 | Synced: 800 | Created: 800 | Updated: 0 | Errors: 0
+[2026-06-23 06:04:32] Zoho -> WooCommerce progress: 900/2601 | Synced: 900 | Created: 900 | Updated: 0 | Errors: 0
+[2026-06-23 06:11:48] Zoho -> WooCommerce progress: 1000/2601 | Synced: 1000 | Created: 1000 | Updated: 0 | Errors: 0
+[2026-06-23 06:19:45] Zoho -> WooCommerce progress: 1100/2601 | Synced: 1100 | Created: 1100 | Updated: 0 | Errors: 0
+[2026-06-23 06:26:58] Zoho -> WooCommerce progress: 1200/2601 | Synced: 1200 | Created: 1200 | Updated: 0 | Errors: 0
+[2026-06-23 06:32:35] Zoho -> WooCommerce progress: 1300/2601 | Synced: 1300 | Created: 1300 | Updated: 0 | Errors: 0
+[2026-06-23 06:38:19] Zoho -> WooCommerce progress: 1400/2601 | Synced: 1400 | Created: 1400 | Updated: 0 | Errors: 0
+[2026-06-23 06:44:54] Zoho -> WooCommerce progress: 1500/2601 | Synced: 1500 | Created: 1500 | Updated: 0 | Errors: 0
+[2026-06-23 06:51:14] Zoho -> WooCommerce progress: 1600/2601 | Synced: 1600 | Created: 1600 | Updated: 0 | Errors: 0
+[2026-06-23 06:57:12] Zoho -> WooCommerce progress: 1700/2601 | Synced: 1700 | Created: 1700 | Updated: 0 | Errors: 0
+[2026-06-23 07:03:24] Zoho -> WooCommerce progress: 1800/2601 | Synced: 1800 | Created: 1800 | Updated: 0 | Errors: 0
+[2026-06-23 07:09:18] Zoho -> WooCommerce progress: 1900/2601 | Synced: 1900 | Created: 1900 | Updated: 0 | Errors: 0
+[2026-06-23 07:16:54] Zoho -> WooCommerce progress: 2000/2601 | Synced: 2000 | Created: 2000 | Updated: 0 | Errors: 0
+[2026-06-23 07:23:49] Zoho -> WooCommerce progress: 2100/2601 | Synced: 2100 | Created: 2100 | Updated: 0 | Errors: 0
+[2026-06-23 07:29:59] Zoho -> WooCommerce progress: 2200/2601 | Synced: 2200 | Created: 2200 | Updated: 0 | Errors: 0
+[2026-06-23 07:36:00] Zoho -> WooCommerce progress: 2300/2601 | Synced: 2300 | Created: 2300 | Updated: 0 | Errors: 0
+[2026-06-23 07:42:15] Zoho -> WooCommerce progress: 2400/2601 | Synced: 2400 | Created: 2400 | Updated: 0 | Errors: 0
+[2026-06-23 07:47:52] Zoho -> WooCommerce progress: 2500/2601 | Synced: 2500 | Created: 2500 | Updated: 0 | Errors: 0
+[2026-06-23 07:53:12] Zoho -> WooCommerce progress: 2600/2601 | Synced: 2600 | Created: 2600 | Updated: 0 | Errors: 0
+[2026-06-23 07:53:14] Zoho -> WooCommerce sync done | Zoho items: 2601 | Synced: 2601 | Created in WC: 2601 | Updated in WC: 0 | Skipped: 0 | Errors: 0
+[2026-06-24 03:57:29] Cron: starting daily CSV download...
+[2026-06-24 03:57:29] Starting SFTP download...
+[2026-06-24 03:57:29] TCP OK → dsdatafeeds.blob.core.windows.net:22
+[2026-06-24 03:57:31] SFTP logged in.
+[2026-06-24 03:57:36] Downloaded [/AUSWID/ds-standard-datafeed.csv] → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-06-24 03:57:36] Cron: download complete → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-06-24 03:57:36] Cron: Zoho sync NOT started automatically. Use the "Sync to Zoho" button in the admin.
+[2026-06-24 06:01:58] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:02:05] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:14:39] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:14:45] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:14:45] Sync manually triggered by admin user.
+[2026-06-24 06:14:49] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:14:50] =======================================================
+[2026-06-24 06:14:50] SYNC START: /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-06-24 06:14:50] =======================================================
+[2026-06-24 06:14:50] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:14:50] Zoho source: Zoho Inventory WooCommerce Sync | DC: zoho.com | Org: 873827738
+[2026-06-24 06:14:50] CSV columns (64): Dynamic Supplies SKU, Manufacturer OEM Code, Brand, Name, Reseller Price Ex GST, RRP (inc GST), Cat Tier 1, Cat Tier 2, Cat Tier 3, QLD, NSW, VIC, WA, SA, VIRTUAL, Length (Shipping), Width (Shipping), Height (Shipping), Cubic m3 (Shipping), Product Weight (g), Bulky Item, Dangerous Goods, Button Battery, UoM, Creation Date, EOL, Description, Features/Specifications (HTML), Alternative Product Title, UPC/EAN/GTIN, Main Image URL, Alt Image 1, Alt Image 2, Alt Image 3, Images Last Updated, Product Brochure 1, Product Brochure 2, MSDS, Range Guide, Printer Compatibility, Cartridge Yield, Cartridge Type, Product Category Description, Regionalisation Code, Specific Type 1, Specific Value 1, Specific Type 2, Specific Value 2, Specific Type 3, Specific Value 3, Specific Type 4, Specific Value 4, Specific Type 5, Specific Value 5, Specific Type 6, Specific Value 6, Specific Type 7, Specific Value 7, Specific Type 8, Specific Value 8, Specific Type 9, Specific Value 9, Specific Type 10, Specific Value 10
+[2026-06-24 06:14:50] Image column detected: "Main Image URL"
+[2026-06-24 06:14:50] PASS 1 done | CSV rows: 3 | Unchanged: 2 | To sync: 1
+[2026-06-24 06:14:50] Fetching Zoho SKU map (one-time bulk lookup)...
+[2026-06-24 06:14:50] Zoho: fetching all existing items for SKU map (WC Sync plugin)...
+[2026-06-24 06:14:56] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:15:05] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:15:16] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:15:17] Zoho SKU map ready: 2594 items.
+[2026-06-24 06:15:17] SKU map fetch used ~13 API call(s).
+[2026-06-24 06:15:18] WARNING: Could not resolve inventory account "Dynamic Supply" — items may fail if item_type requires it.
+[2026-06-24 06:15:18] Settings | Throttle: 800ms | Budget remaining: 3000/3000 | Already used today: 13
+[2026-06-24 06:15:18] -------------------------------------------------------
+[2026-06-24 06:15:18] PASS 2: sending to Zoho...
+[2026-06-24 06:15:18] -------------------------------------------------------
+[2026-06-24 06:15:18] Row 3 | 1/1 | UPDATE | SKU: B131C
+[2026-06-24 06:15:20]   ✔ UPDATED: B131C
+[2026-06-24 06:15:20]   → Uploading image image:B131C
+[2026-06-24 06:15:24]   ✔ IMAGE uploaded for item_id: 5860785000001433001
+[2026-06-24 06:15:24] =======================================================
+[2026-06-24 06:15:24] Sync done | CSV: 3 | Queued: 1 | API calls: 2 | Created: 0 | Updated: 1 | Skipped: 2 | Errors: 0 | In Zoho: 3/3 (100%)
+[2026-06-24 06:15:24] =======================================================
+[2026-06-24 06:15:25] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:15:33] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:15:44] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:15:50] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:16:08] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:16:12] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:16:15] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:16:24] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:16:29] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:16:31] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:18:16] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:18:16] Sync manually triggered by admin user.
+[2026-06-24 06:18:23] =======================================================
+[2026-06-24 06:18:23] SYNC START: /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-06-24 06:18:23] =======================================================
+[2026-06-24 06:18:23] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:18:23] Zoho source: Zoho Inventory WooCommerce Sync | DC: zoho.com | Org: 873827738
+[2026-06-24 06:18:23] CSV columns (64): Dynamic Supplies SKU, Manufacturer OEM Code, Brand, Name, Reseller Price Ex GST, RRP (inc GST), Cat Tier 1, Cat Tier 2, Cat Tier 3, QLD, NSW, VIC, WA, SA, VIRTUAL, Length (Shipping), Width (Shipping), Height (Shipping), Cubic m3 (Shipping), Product Weight (g), Bulky Item, Dangerous Goods, Button Battery, UoM, Creation Date, EOL, Description, Features/Specifications (HTML), Alternative Product Title, UPC/EAN/GTIN, Main Image URL, Alt Image 1, Alt Image 2, Alt Image 3, Images Last Updated, Product Brochure 1, Product Brochure 2, MSDS, Range Guide, Printer Compatibility, Cartridge Yield, Cartridge Type, Product Category Description, Regionalisation Code, Specific Type 1, Specific Value 1, Specific Type 2, Specific Value 2, Specific Type 3, Specific Value 3, Specific Type 4, Specific Value 4, Specific Type 5, Specific Value 5, Specific Type 6, Specific Value 6, Specific Type 7, Specific Value 7, Specific Type 8, Specific Value 8, Specific Type 9, Specific Value 9, Specific Type 10, Specific Value 10
+[2026-06-24 06:18:23] Image column detected: "Main Image URL"
+[2026-06-24 06:18:23] PASS 1 done | CSV rows: 3 | Unchanged: 3 | To sync: 0
+[2026-06-24 06:18:23] All 3 products already up to date — nothing to sync.
+[2026-06-24 06:18:24] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:18:40] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:18:49] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:19:01] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:33:17] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:33:24] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:33:25] Sync manually triggered by admin user.
+[2026-06-24 06:33:25] =======================================================
+[2026-06-24 06:33:25] SYNC START: /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-06-24 06:33:25] =======================================================
+[2026-06-24 06:33:25] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:33:25] Zoho source: Zoho Inventory WooCommerce Sync | DC: zoho.com | Org: 873827738
+[2026-06-24 06:33:25] CSV columns (64): Dynamic Supplies SKU, Manufacturer OEM Code, Brand, Name, Reseller Price Ex GST, RRP (inc GST), Cat Tier 1, Cat Tier 2, Cat Tier 3, QLD, NSW, VIC, WA, SA, VIRTUAL, Length (Shipping), Width (Shipping), Height (Shipping), Cubic m3 (Shipping), Product Weight (g), Bulky Item, Dangerous Goods, Button Battery, UoM, Creation Date, EOL, Description, Features/Specifications (HTML), Alternative Product Title, UPC/EAN/GTIN, Main Image URL, Alt Image 1, Alt Image 2, Alt Image 3, Images Last Updated, Product Brochure 1, Product Brochure 2, MSDS, Range Guide, Printer Compatibility, Cartridge Yield, Cartridge Type, Product Category Description, Regionalisation Code, Specific Type 1, Specific Value 1, Specific Type 2, Specific Value 2, Specific Type 3, Specific Value 3, Specific Type 4, Specific Value 4, Specific Type 5, Specific Value 5, Specific Type 6, Specific Value 6, Specific Type 7, Specific Value 7, Specific Type 8, Specific Value 8, Specific Type 9, Specific Value 9, Specific Type 10, Specific Value 10
+[2026-06-24 06:33:25] Image column detected: "Main Image URL"
+[2026-06-24 06:33:25] PASS 1 done | CSV rows: 3 | Unchanged: 0 | To sync: 3
+[2026-06-24 06:33:26] Using cached Zoho SKU map (2594 items).
+[2026-06-24 06:33:27] WARNING: Could not resolve inventory account "Dynamic Supply" — items may fail if item_type requires it.
+[2026-06-24 06:33:27] Settings | Throttle: 800ms | Budget remaining: 2985/3000 | Already used today: 15
+[2026-06-24 06:33:27] -------------------------------------------------------
+[2026-06-24 06:33:27] PASS 2: sending to Zoho...
+[2026-06-24 06:33:27] -------------------------------------------------------
+[2026-06-24 06:33:27] Row 1 | 1/3 | UPDATE | SKU: B05B
+[2026-06-24 06:33:28]   ✘ ERROR [update] SKU B05B: Illegal value specified for a Dropdown field: Brother
+[2026-06-24 06:33:29] Row 2 | 2/3 | UPDATE | SKU: B131B
+[2026-06-24 06:33:30]   ✘ ERROR [update] SKU B131B: Illegal value specified for a Dropdown field: Brother
+[2026-06-24 06:33:31] Row 3 | 3/3 | UPDATE | SKU: B131C
+[2026-06-24 06:33:32]   ✘ ERROR [update] SKU B131C: Illegal value specified for a Dropdown field: Brother
+[2026-06-24 06:33:32] =======================================================
+[2026-06-24 06:33:32] Sync done | CSV: 3 | Queued: 3 | API calls: 3 | Created: 0 | Updated: 0 | Skipped: 0 | Errors: 3 | In Zoho: 3/3 (100%)
+[2026-06-24 06:33:32] =======================================================
+[2026-06-24 06:33:35] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:37:59] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:38:05] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:38:05] Sync manually triggered by admin user.
+[2026-06-24 06:38:06] =======================================================
+[2026-06-24 06:38:06] SYNC START: /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-06-24 06:38:06] =======================================================
+[2026-06-24 06:38:06] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:38:06] Zoho source: Zoho Inventory WooCommerce Sync | DC: zoho.com | Org: 873827738
+[2026-06-24 06:38:06] CSV columns (64): Dynamic Supplies SKU, Manufacturer OEM Code, Brand, Name, Reseller Price Ex GST, RRP (inc GST), Cat Tier 1, Cat Tier 2, Cat Tier 3, QLD, NSW, VIC, WA, SA, VIRTUAL, Length (Shipping), Width (Shipping), Height (Shipping), Cubic m3 (Shipping), Product Weight (g), Bulky Item, Dangerous Goods, Button Battery, UoM, Creation Date, EOL, Description, Features/Specifications (HTML), Alternative Product Title, UPC/EAN/GTIN, Main Image URL, Alt Image 1, Alt Image 2, Alt Image 3, Images Last Updated, Product Brochure 1, Product Brochure 2, MSDS, Range Guide, Printer Compatibility, Cartridge Yield, Cartridge Type, Product Category Description, Regionalisation Code, Specific Type 1, Specific Value 1, Specific Type 2, Specific Value 2, Specific Type 3, Specific Value 3, Specific Type 4, Specific Value 4, Specific Type 5, Specific Value 5, Specific Type 6, Specific Value 6, Specific Type 7, Specific Value 7, Specific Type 8, Specific Value 8, Specific Type 9, Specific Value 9, Specific Type 10, Specific Value 10
+[2026-06-24 06:38:06] Image column detected: "Main Image URL"
+[2026-06-24 06:38:06] PASS 1 done | CSV rows: 3 | Unchanged: 0 | To sync: 3
+[2026-06-24 06:38:06] Using cached Zoho SKU map (2594 items).
+[2026-06-24 06:38:07] WARNING: Could not resolve inventory account "Dynamic Supply" — items may fail if item_type requires it.
+[2026-06-24 06:38:07] Settings | Throttle: 800ms | Budget remaining: 2982/3000 | Already used today: 18
+[2026-06-24 06:38:07] -------------------------------------------------------
+[2026-06-24 06:38:07] PASS 2: sending to Zoho...
+[2026-06-24 06:38:07] -------------------------------------------------------
+[2026-06-24 06:38:07] Row 1 | 1/3 | UPDATE | SKU: B05B
+[2026-06-24 06:38:08]   ✔ UPDATED: B05B
+[2026-06-24 06:38:08]   → Uploading image image:B05B
+[2026-06-24 06:38:12]   ✔ IMAGE uploaded for item_id: 5860785000001435002
+[2026-06-24 06:38:13] Row 2 | 2/3 | UPDATE | SKU: B131B
+[2026-06-24 06:38:14]   ✔ UPDATED: B131B
+[2026-06-24 06:38:14]   → Uploading image image:B131B
+[2026-06-24 06:38:18]   ✔ IMAGE uploaded for item_id: 5860785000001435023
+[2026-06-24 06:38:19] Row 3 | 3/3 | UPDATE | SKU: B131C
+[2026-06-24 06:38:20] Error log cleared by user.
+[2026-06-24 06:38:20]   ✔ UPDATED: B131C
+[2026-06-24 06:38:20]   → Uploading image image:B131C
+[2026-06-24 06:38:24]   ✔ IMAGE uploaded for item_id: 5860785000001433001
+[2026-06-24 06:38:24] =======================================================
+[2026-06-24 06:38:24] Sync done | CSV: 3 | Queued: 3 | API calls: 6 | Created: 0 | Updated: 3 | Skipped: 0 | Errors: 0 | In Zoho: 3/3 (100%)
+[2026-06-24 06:38:24] =======================================================
+[2026-06-24 06:38:26] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:38:30] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:40:53] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:53:40] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:54:56] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:54:57] Sync manually triggered by admin user.
+[2026-06-24 06:54:57] =======================================================
+[2026-06-24 06:54:57] SYNC START: /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-06-24 06:54:57] =======================================================
+[2026-06-24 06:54:57] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:54:57] Zoho source: Zoho Inventory WooCommerce Sync | DC: zoho.com | Org: 873827738
+[2026-06-24 06:54:57] CSV columns (64): Dynamic Supplies SKU, Manufacturer OEM Code, Brand, Name, Reseller Price Ex GST, RRP (inc GST), Cat Tier 1, Cat Tier 2, Cat Tier 3, QLD, NSW, VIC, WA, SA, VIRTUAL, Length (Shipping), Width (Shipping), Height (Shipping), Cubic m3 (Shipping), Product Weight (g), Bulky Item, Dangerous Goods, Button Battery, UoM, Creation Date, EOL, Description, Features/Specifications (HTML), Alternative Product Title, UPC/EAN/GTIN, Main Image URL, Alt Image 1, Alt Image 2, Alt Image 3, Images Last Updated, Product Brochure 1, Product Brochure 2, MSDS, Range Guide, Printer Compatibility, Cartridge Yield, Cartridge Type, Product Category Description, Regionalisation Code, Specific Type 1, Specific Value 1, Specific Type 2, Specific Value 2, Specific Type 3, Specific Value 3, Specific Type 4, Specific Value 4, Specific Type 5, Specific Value 5, Specific Type 6, Specific Value 6, Specific Type 7, Specific Value 7, Specific Type 8, Specific Value 8, Specific Type 9, Specific Value 9, Specific Type 10, Specific Value 10
+[2026-06-24 06:54:57] Image column detected: "Main Image URL"
+[2026-06-24 06:54:57] PASS 1 done | CSV rows: 3 | Unchanged: 3 | To sync: 0
+[2026-06-24 06:54:57] All 3 products already up to date — nothing to sync.
+[2026-06-24 06:55:00] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:55:17] Zoho -> WooCommerce sync manually triggered by admin user.
+[2026-06-24 06:55:17] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:55:43] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:55:44] Zoho -> WooCommerce sync started.
+[2026-06-24 06:56:10] Zoho -> WooCommerce test mode: syncing only 1 filtered item(s): 5860785000001435023
+[2026-06-24 06:56:10] Zoho -> WooCommerce: fetched 1 active Zoho item(s).
+[2026-06-24 06:56:10] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:56:17] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 06:56:19] Zoho -> WooCommerce sync done | Zoho items: 1 | Synced: 1 | Created in WC: 0 | Updated in WC: 1 | Skipped: 0 | Errors: 0
+[2026-06-24 06:56:21] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 07:02:12] Zoho -> WooCommerce sync manually triggered by admin user.
+[2026-06-24 07:02:12] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-24 07:02:24] Zoho -> WooCommerce sync started.
+[2026-06-24 07:02:53] Zoho -> WooCommerce test mode: syncing only 1 filtered item(s): 5860785000001252003
+[2026-06-24 07:02:53] Zoho -> WooCommerce: fetched 1 active Zoho item(s).
+[2026-06-24 07:02:57] Zoho -> WooCommerce sync done | Zoho items: 1 | Synced: 1 | Created in WC: 0 | Updated in WC: 1 | Skipped: 0 | Errors: 0
+[2026-06-24 07:03:42] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-25 04:29:29] Cron: starting daily CSV download...
+[2026-06-25 04:29:30] Starting SFTP download...
+[2026-06-25 04:29:30] TCP OK → dsdatafeeds.blob.core.windows.net:22
+[2026-06-25 04:29:31] SFTP logged in.
+[2026-06-25 04:29:38] Downloaded [/AUSWID/ds-standard-datafeed.csv] → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-06-25 04:29:38] Cron: download complete → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-06-25 04:29:38] Cron: Zoho sync NOT started automatically. Use the "Sync to Zoho" button in the admin.
+[2026-06-25 04:29:38] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-25 04:36:05] Zoho -> WooCommerce sync manually triggered by admin user.
+[2026-06-25 04:36:05] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-25 04:36:16] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-25 04:36:16] Zoho -> WooCommerce sync started.
+[2026-06-25 04:36:40] Zoho -> WooCommerce test mode: syncing only 1 filtered item(s): 5860785000001252003
+[2026-06-25 04:36:40] Zoho -> WooCommerce: fetched 1 active Zoho item(s).
+[2026-06-25 04:36:43] Zoho -> WooCommerce sync done | Zoho items: 1 | Synced: 1 | Created in WC: 0 | Updated in WC: 1 | Skipped: 0 | Errors: 0
+[2026-06-25 04:36:51] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-06-26 00:08:38] Cron: starting daily CSV download...
+[2026-06-26 00:08:38] Starting SFTP download...
+[2026-06-26 00:08:38] TCP OK → dsdatafeeds.blob.core.windows.net:22
+[2026-06-26 00:08:46] SFTP logged in.
+[2026-06-26 00:08:52] Downloaded [/AUSWID/ds-standard-datafeed.csv] → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-06-26 00:08:52] Cron: download complete → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-06-26 00:08:52] Cron: Zoho sync NOT started automatically. Use the "Sync to Zoho" button in the admin.
+[2026-06-29 09:51:48] Cron: starting daily CSV download...
+[2026-06-29 09:51:48] Starting SFTP download...
+[2026-06-29 09:51:49] TCP OK → dsdatafeeds.blob.core.windows.net:22
+[2026-06-29 09:51:51] SFTP logged in.
+[2026-06-29 09:51:56] Downloaded [/AUSWID/ds-standard-datafeed.csv] → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-06-29 09:51:56] Cron: download complete → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-06-29 09:51:56] Cron: Zoho sync NOT started automatically. Use the "Sync to Zoho" button in the admin.
+[2026-07-01 05:39:38] Cron: starting daily CSV download...
+[2026-07-01 05:39:38] Starting SFTP download...
+[2026-07-01 05:39:39] TCP OK → dsdatafeeds.blob.core.windows.net:22
+[2026-07-01 05:39:40] SFTP logged in.
+[2026-07-01 05:39:45] Downloaded [/AUSWID/ds-standard-datafeed.csv] → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-07-01 05:39:45] Cron: download complete → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-07-01 05:39:45] Cron: Zoho sync NOT started automatically. Use the "Sync to Zoho" button in the admin.
+[2026-07-02 08:57:01] Cron: starting daily CSV download...
+[2026-07-02 08:57:01] Starting SFTP download...
+[2026-07-02 08:57:01] TCP OK → dsdatafeeds.blob.core.windows.net:22
+[2026-07-02 08:57:03] SFTP logged in.
+[2026-07-02 08:57:08] Downloaded [/AUSWID/ds-standard-datafeed.csv] → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-07-02 08:57:08] Cron: download complete → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-07-02 08:57:08] Cron: Zoho sync NOT started automatically. Use the "Sync to Zoho" button in the admin.
+[2026-07-02 09:13:43] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-07-29 04:03:10] Using DSDF direct Zoho API credentials.
+[2026-07-29 04:03:26] Using DSDF direct Zoho API credentials.
+[2026-07-29 04:04:31] Using DSDF direct Zoho API credentials.
+[2026-07-29 04:04:37] Using DSDF direct Zoho API credentials.
+[2026-07-30 01:07:15] Cron: starting daily CSV download...
+[2026-07-30 01:07:15] Starting SFTP download...
+[2026-07-30 01:07:15] TCP OK → dsdatafeeds.blob.core.windows.net:22
+[2026-07-30 01:07:17] SFTP logged in.
+[2026-07-30 01:07:22] Downloaded [/AUSWID/ds-standard-datafeed.csv] → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-07-30 01:07:22] Cron: download complete → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-07-30 01:07:22] Cron: Zoho sync NOT started automatically. Use the "Sync to Zoho" button in the admin.
+[2026-07-31 05:53:35] Cron: starting daily CSV download...
+[2026-07-31 05:53:35] Starting SFTP download...
+[2026-07-31 05:53:35] TCP OK → dsdatafeeds.blob.core.windows.net:22
+[2026-07-31 05:53:37] SFTP logged in.
+[2026-07-31 05:53:44] Downloaded [/AUSWID/ds-standard-datafeed.csv] → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-07-31 05:53:44] Cron: download complete → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-07-31 05:53:44] Cron: Zoho sync NOT started automatically. Use the "Sync to Zoho" button in the admin.
+[2026-08-03 04:50:47] Cron: starting daily CSV download...
+[2026-08-03 04:50:47] Starting SFTP download...
+[2026-08-03 04:50:47] TCP OK → dsdatafeeds.blob.core.windows.net:22
+[2026-08-03 04:50:49] SFTP logged in.
+[2026-08-03 04:50:54] Downloaded [/AUSWID/ds-standard-datafeed.csv] → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-08-03 04:50:54] Cron: download complete → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-08-03 04:50:54] Cron: Zoho sync NOT started automatically. Use the "Sync to Zoho" button in the admin.
+[2026-08-04 05:21:13] Cron: starting daily CSV download...
+[2026-08-04 05:21:13] Starting SFTP download...
+[2026-08-04 05:21:13] TCP OK → dsdatafeeds.blob.core.windows.net:22
+[2026-08-04 05:21:15] SFTP logged in.
+[2026-08-04 05:21:31] Downloaded [/AUSWID/ds-standard-datafeed.csv] → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-08-04 05:21:31] Cron: download complete → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-08-04 05:21:31] Cron: Zoho sync NOT started automatically. Use the "Sync to Zoho" button in the admin.
+[2026-08-05 04:27:37] Cron: starting daily CSV download...
+[2026-08-05 04:27:37] Starting SFTP download...
+[2026-08-05 04:27:37] TCP OK → dsdatafeeds.blob.core.windows.net:22
+[2026-08-05 04:27:38] SFTP logged in.
+[2026-08-05 04:27:43] Downloaded [/AUSWID/ds-standard-datafeed.csv] → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-08-05 04:27:43] Cron: download complete → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-08-05 04:27:43] Cron: Zoho sync NOT started automatically. Use the "Sync to Zoho" button in the admin.
+[2026-08-06 02:48:39] Cron: starting daily CSV download...
+[2026-08-06 02:48:39] Starting SFTP download...
+[2026-08-06 02:48:39] TCP OK → dsdatafeeds.blob.core.windows.net:22
+[2026-08-06 02:48:41] SFTP logged in.
+[2026-08-06 02:48:46] Downloaded [/AUSWID/ds-standard-datafeed.csv] → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-08-06 02:48:46] Cron: download complete → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-08-06 02:48:46] Cron: Zoho sync NOT started automatically. Use the "Sync to Zoho" button in the admin.
+[2026-08-07 05:31:58] Cron: starting daily CSV download...
+[2026-08-07 05:31:58] Starting SFTP download...
+[2026-08-07 05:31:58] TCP OK → dsdatafeeds.blob.core.windows.net:22
+[2026-08-07 05:32:00] SFTP logged in.
+[2026-08-07 05:32:05] Downloaded [/AUSWID/ds-standard-datafeed.csv] → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-08-07 05:32:05] Cron: download complete → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-08-07 05:32:05] Cron: Zoho sync NOT started automatically. Use the "Sync to Zoho" button in the admin.
+[2026-08-09 14:08:15] Cron: starting daily CSV download...
+[2026-08-09 14:08:15] Starting SFTP download...
+[2026-08-09 14:08:15] TCP OK → dsdatafeeds.blob.core.windows.net:22
+[2026-08-09 14:08:17] SFTP logged in.
+[2026-08-09 14:08:22] Downloaded [/AUSWID/ds-standard-datafeed.csv] → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-08-09 14:08:22] Cron: download complete → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-08-09 14:08:22] Cron: Zoho sync NOT started automatically. Use the "Sync to Zoho" button in the admin.
+[2026-08-10 03:32:07] Cron: starting daily CSV download...
+[2026-08-10 03:32:07] Starting SFTP download...
+[2026-08-10 03:32:08] TCP OK → dsdatafeeds.blob.core.windows.net:22
+[2026-08-10 03:32:09] SFTP logged in.
+[2026-08-10 03:32:14] Downloaded [/AUSWID/ds-standard-datafeed.csv] → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-08-10 03:32:14] Cron: download complete → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-08-10 03:32:14] Cron: Zoho sync NOT started automatically. Use the "Sync to Zoho" button in the admin.
+[2026-08-11 05:48:33] Cron: starting daily CSV download...
+[2026-08-11 05:48:33] Starting SFTP download...
+[2026-08-11 05:48:33] TCP OK → dsdatafeeds.blob.core.windows.net:22
+[2026-08-11 05:48:35] SFTP logged in.
+[2026-08-11 05:48:42] Downloaded [/AUSWID/ds-standard-datafeed.csv] → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-08-11 05:48:42] Cron: download complete → /var/www/html/wp-content/uploads/dynamic-supplies/ds-standard-datafeed.csv
+[2026-08-11 05:48:42] Cron: Zoho sync NOT started automatically. Use the "Sync to Zoho" button in the admin.
+[2026-08-11 05:49:35] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-08-11 05:51:26] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
+[2026-08-11 06:07:10] Using Zoho connection from WooCommerce Sync plugin (org: 873827738).
